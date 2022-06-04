@@ -53,3 +53,47 @@ constan de un título y una extensión.
 
 ● Para cada revista, almacenaremos información de cada ejemplar, que incluirá la
 fecha, número de páginas y el número de ejemplares vendidos.
+
+![image](https://user-images.githubusercontent.com/101481181/172019421-e09b7ccc-4ad0-45e0-91c5-c3a8545c0586.png)
+
+codigo
+
+CREATE DATABASE PROVEEDORES;
+USE PROVEEDORES;
+
+CREATE TABLE SUCURSAL (
+  cod_suc varchar(50) PRIMARY KEY,
+  DIR_SUR varchar(200) NOT NULL,
+  TEL_SUC bigint unsigned not null unique,
+  CIUDAD varchar(100),
+  PROVINCIA_SUC varchar(100) not null
+  );
+  
+  
+  create table revista (
+    numero_registro varchar(100) primary key,
+    titulo varchar (100) not null unique,
+    tipo_rev varchar(100) unique,
+    periodicidad varchar(100)
+    );
+    
+    
+    create table periodista(
+      id_per varchar(50) primary key,
+      nom_per varchar(100) unique not null,
+      apellido1_per varchar(100) not null,
+      apellido2_per varchar(100) not null,
+     tel_per bigint unique not null, 
+     especialidad varchar(100) not null
+     );
+     
+     create table empleado(
+       nif varchar(50) primary key,
+       nom_emp varchar(100) not null,
+       apellido1_emp varchar(100) not null,
+       apellido2_emp varchar(100) not null,
+       tel_emp bigint unique not null,
+       cod_suc1 varchar(50),
+       foreign key(cod_suc1) references SUCURSAL(cod_suc)
+       
+       );
