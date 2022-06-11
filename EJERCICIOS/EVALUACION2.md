@@ -79,28 +79,47 @@ Tienda de informática
 
 Modelo entidad/relación
 
+![image](https://user-images.githubusercontent.com/101481181/173207910-f7bcfef4-702c-43b8-9c63-e497f62997d7.png)
+
+
 CREATE DATABASE Tienda;
 USE Tienda;
 
 
 CREATE TABLE producto(
+
   id_prod VARCHAR(10) PRIMARY KEY,
+  
   nom_prod VARCHAR(50) NOT NULL,
+  
   precio FLOAT NOT NULL,
+  
   nom_fab VARCHAR(50) NOT NULL
+  
   );
   
   INSERT INTO producto VALUES ('DD-23','Disco Duro SATA3 1 TB',86.99,'SEAGATE');
+  
   INSERT INTO producto VALUES ('MM-34','MEMORIA RAM DDR4 8GB',120.6,'SEAGATE');
+  
   INSERT INTO producto VALUES ('DD-98','DISCO SSD 1 TB',150.99,'SEAGATE');
+  
   INSERT INTO producto VALUES ('MM-98','GEFORCE GTX 1050TI',185.7,'SEAGATE');
+  
   INSERT INTO producto VALUES ('MM-23','GEFORCE GTX 1080 EXTREME',755.6,'SEAGATE');
+  
   INSERT INTO producto VALUES ('MT-12','MONITOR 24 LED FULL HD',202.1,'SEAGATE');
+  
   INSERT INTO producto VALUES ('MT-08','MONITOR 27 LED FULL HD',245.99,'SEAGATE');
+  
   INSERT INTO producto VALUES ('LP-19','PORTATIL YOGA 520',559.2,'SEAGATE');
+  
   INSERT INTO producto VALUES ('LP-11','PORTATIL IDEAPAD 320',444.2,'SEAGATE');
+  
   INSERT INTO producto VALUES ('IM-56','IMPRESORA HP DESKJET 3720',59.99,'SEAGATE');
+  
   INSERT INTO producto VALUES ('IP-54','IMPRESORA HP LASERJET PRO M26NW',180.3,'SEAGATE');
+  
 
 
 Base de datos para MySQL
