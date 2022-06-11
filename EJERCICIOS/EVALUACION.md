@@ -76,6 +76,10 @@ fecha, número de páginas y el número de ejemplares vendidos.
 ![image](https://user-images.githubusercontent.com/101481181/172019421-e09b7ccc-4ad0-45e0-91c5-c3a8545c0586.png)
 
 codigo
+
+
+#
+
 CREATE DATABASE editorial;
 USE editorial;
 
